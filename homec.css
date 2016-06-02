@@ -1,0 +1,28 @@
+.abc{
+    background-color:grey;
+
+}
+.container {
+    background-color: white;
+    padding-bottom: 500px;
+    margin-top: 85px;
+    margin-left: 72px;
+    margin-right: 294px; !important
+}
+.line
+{
+border-top: 9px solid grey;
+    margin-left: 52px;
+margin-right: 59px;
+}
+.center
+{
+    text-align: center;
+}
+.mg1 {
+    margin-left: 75px;
+}
+.wid{
+    width:50px;
+    padding-left: 10px;
+}
