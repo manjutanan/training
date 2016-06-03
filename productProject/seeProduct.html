@@ -11,11 +11,45 @@
 </head>
 <body ng-controller="HttpGetController">
 <div class="row">
-    <div class="col-sm-4" ng-repeat="product in names">
-        <img ng-src="{{product.images}}"/>
+    <div class="col-sm-2 col-sm-offset-2" ng-repeat="product in names" class="thumbnail">
+
+        <img style="min-height: 249px!important" ng-src="{{product.images}}"class="img-thumbnail " alt="Cinque Terre" width="204" height="236"  class="img-responsive">
+        <button ng-click="abc(product._id)" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">View Detail</button>
+        <p>Prize:${{product.price}}</p>
+
     </div>
 </div>
 
 
+<h2>Modal Example</h2>
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <h4> {{modal_data.price | currency}} </h4>
+
+            </div>
+            <div class="col-sm-6">
+                <img ng-src="{{modal_data.images}}"/>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
 </body>
 </html>

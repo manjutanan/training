@@ -72,6 +72,13 @@ app.controller("HttpGetController", function ($scope, $http,$location) {
                         $scope.names.splice(index,1);
                     })
             };
-
+            $scope.abc = function (_id) {
+                $scope.names.forEach(function (data) {
+                    if (data._id == _id) {
+                        $scope.modal_data = data;
+                        console.log("hiiiiiiiiiiiiiiiii",data );
+                    }
+                })
+            }
         });
 });
