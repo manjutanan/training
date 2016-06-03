@@ -1,0 +1,20 @@
+1. Form for adding products
+2. Display all products using a table
+3. Update a single product
+4. Delete a product
+
+URL - http://satpalmoto.storehippo.com/entity/products
+
+GET -- all the products               $http.get
+POST -- send data to this url to add a product --------- $http.post
+PUT -- update the product
+DELETE -- delete the product
+
+Fields:-
+
+Name
+Description
+Images - Array [url1 ,url2 ,url3]
+Price
+Weight
+Categories - Array [cat1, cat2, cat3]

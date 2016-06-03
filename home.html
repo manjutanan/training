@@ -20,7 +20,7 @@
         <th>Quantity</th>
         <th>Price</th>
 
-        <tr>
+        </tr>
         </thead>
         <tbody ng-repeat="product in productsInCart">
         <td>
@@ -44,26 +44,9 @@
         <td><input class="wid" type="number" ng-model="product.p_quantity" ></td>
         <td>{{product.c_currency}} {{product.p_price}}</td>
 
+
         </tbody>
-
         </table>
-<!--
-    <li ng-repeat="product in productsInCart">
-        <img ng-src="img/T{{product.p_id}}.jpg" />
-        {{product.length}}<br>
-     {{product.p_variation}}<br>
-        {{product.p_name}}<br>
-        {{product.p_style}}<br>
-        {{product.p_selected_size.code}}<br>
-        {{product.p_price}}<br>
-        {{product.p_selected_color.name}}
-        ==========={{productsInCart.length}}================
-
-
-
-
-    </li>
--->
 
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
@@ -80,14 +63,14 @@
                                     <h4> {{modal_data.p_variation | uppercase}} {{modal_data.p_name | uppercase}}</h4>
                                     <p>Style #: {{modal_data.p_style | uppercase}}</p>
                                     <p>Color: {{modal_data.p_selected_color.name}}</p>
-                                    </div>
+                                </div>
                                 <div class="col-sm-6">
                                     <img ng-src="img/T{{modal_data.p_id}}.jpg"/>
 
                                 </div>
-                                </div>
                             </div>
                         </div>
+                    </div>
 
                 </div>
                 <div class="modal-footer">
@@ -96,9 +79,58 @@
             </div>
         </div>
     </div>
+<div class="container">
+    <div class="row border1">
+        <div class="col-sm-3" style="padding-top: 60px!important">
+            <h4 >Need Help <br> Or Have Question ?</h4>
 
+            <h5>Call Custumer Service at<br>
+                1-800-555-5555</h5>
+
+            <p style="margin-bottom: 0px!important"><u>Chat with one of </u></p>
+            <p><u>Our Stttylists</u></p>
+
+            <p style="margin-bottom: 0px!important"> <u> See Return</u></p>
+            <p><u>& Exchange Policy</u></p>
+
+        </div>
+
+        <div class="col-sm-8" style="padding-top: 60px!important">
+            <div class="row border2">
+                <div class="col-sm-6" style="padding-top: 15px!important">
+                    <p class="font1" style="margin-bottom: 0px!important">ENTER PROMOTION CODE</p>
+                    <p class="font1">OR GIFT CARD</p>
+                </div>
+                <div class="col-sm-6" style="padding-top: 15px!important">
+                    <span><input type="text" name="value"> <button type="button" class="btn btn-danger">APPLY</button></span>
+
+                </div>
+                </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4>SUBTOTAL:</h4>
+                            </div>
+                        <div class="col-sm-4" >
+                           <h4 style="float: right!important"> $ {{total_val}}</h4>
+                          ;;;;;;;;;;;  {{discount}}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    ==============={{total_val}}===========================
+</div>
 
 </div>
+
 </body>
 
 </html>

@@ -11,9 +11,9 @@
 }
 .line
 {
-border-top: 9px solid grey;
+    border-top: 9px solid grey;
     margin-left: 52px;
-margin-right: 59px;
+    margin-right: 59px;
 }
 .center
 {
@@ -25,4 +25,15 @@ margin-right: 59px;
 .wid{
     width:50px;
     padding-left: 10px;
+}
+.border1{
+    border-top: 12px solid #C1C1C1;
+}
+
+.font1{
+    font-size: 20px!important;
+}
+.border2{
+    border-bottom: 10px solid #C1C1C1;
+
 }

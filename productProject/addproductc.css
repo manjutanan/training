@@ -1,0 +1,46 @@
+body {
+    background-image: url("images%20(2).jpg");
+
+}
+.padding1 {
+    padding-top: 86px;!important
+}
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: pink;
+    color:black;
+}
+input[type=text]:focus {
+    background-color: yellow;
+}
+input[type=number] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: pink;
+    color: black;
+}
+
+input[type=number]:focus {
+    background-color: yellow;
+}
+
+textarea.form-control {
+    height: auto;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: pink;
+    color: black;
+}
+textarea.form-control:focus {
+    background-color: yellow;
+}
